@@ -1,4 +1,3 @@
-﻿# HTML-Practice
 # HTML Practice
 
 This repository contains my HTML practice files and exercises created while learning the fundamentals of web development.
