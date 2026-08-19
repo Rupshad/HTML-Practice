@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+</head>
+<body>
+    <h1>Register for Annual Hackathon</h1>
+    <form action="/api/register" method="POST">
+        <fieldset>
+            <legend>Student Information</legend>
+            <label for="fullName">Full Name(Required):</label>
+            <input type="text" id="fullName" name="fullName" required aria-required="true">
+            <br><br>
+            <label for="collegeEmail">University Email(required)</label>
+            <input type="email" id="collegeEmail" name="collegeEmail" placeholder="Please use your official id" required aria-required="true">
+            <br><br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Academic & Technical Profile</legend>
+            <p>Current Year of Study:</p>
+            <input type="radio" id="Year1" name="studyYear" value="1">
+            <label for="year1">First Year</label><br>
+            <input type="radio" id="Year2" name="studyYear" value="2">
+            <label for="year2">Second Year</label><br>
+            <input type="radio" id="year3" name="studyYear" value="3">
+            <label for="year3">Third Year</label><br>
+            <input type="radio" id="year4" name="studyYear" value="4">
+            <label for="year4">Fourth Year</label><br><br>
+            <label for="programmingLanguage">Primary Programming Language:</label>
+            <select id="programmingLanguage" name="tech-stack">
+                <option value="">SELECT A LANGUAGE</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="js">JavaScript</option>
+                <option value="web">HTML/CSS</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Agreement for participating</legend>
+            <input type="checkbox" id="Agree" name="agreed" required aria-required="true">
+            <label for="Agree">I agree to the Hackathon Code of Conduct.</label>
+        </fieldset>
+        <br>
+        <button type="submit">Submit Registration</button>
+    </form>
+</body>
+</html>        
+
+
+            
+
+ 
+
+
+        
+    
