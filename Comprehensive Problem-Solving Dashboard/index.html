@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Problem-Solving Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="add-problem">
+        <h2>Log a New Problem</h2>
+        <form action="/api/logProblem" method="POST">
+            <fieldset>
+                <legend>Problem Details</legend>
+                <label for="compDate">Completion Date:</label>
+                <input type="date" id="compDate" name="compDate" required>
+                <br><br>
+                <label for="dsTopic">Data Structure/Topic:</label>
+                <input type="text" id="dsTopic" name="dataStructure" placeholder="e.g., Arrays, HashMaps" required><br><br>
+                <label for="diffLevel">Difficulty Level:</label>
+            <select id="diffLevel" name="difficulty_level" required>
+                <option value="">--Select Difficulty--</option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+            <br><br>
+            <label for="timeComp">Time Complexity:</label>
+            <input type="text" id="timeComp" name="time_complexity" placeholder="e.g., O(n), O(log n)" required>
+            <br><br>
+            <button type="submit" style="background-color: #1a73e8; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Save to Database</button>
+
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
