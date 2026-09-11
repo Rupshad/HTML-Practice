@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crave - Recipe Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍜 Crave</h1>
+        <p>Discover something delicious.</p>
+
+        <nav>
+            <a href="#recipes">Recipes</a>
+            <a href="#categories">Categories</a>
+            <a href="#add">Add Recipe</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="search-section">
+
+            <h2>What are you craving?</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Search for a recipe..."
+                >
+
+                <button>Search</button>
+            </div>
+
+        </section>
+
+
+        <section id="recipes">
+
+            <h2>Popular Recipes</h2>
+
+            <div class="recipe-container">
+
+                <article class="recipe-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                        alt="Samosas"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🥟 Crispy Samosa</h3>
+
+                        <p>
+                            A crispy Indian snack filled with spicy
+                            potatoes and peas.
+                        </p>
+
+                        <h4>Ingredients</h4>
+
+                        <ul>
+                            <li>Potatoes</li>
+                            <li>Green peas</li>
+                            <li>Flour</li>
+                            <li>Spices</li>
+                        </ul>
+
+                        <a href="#" class="view-button">
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"
+                        alt="Pasta"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🍝 Creamy Pasta</h3>
+
+                        <p>
+                            Creamy and delicious pasta that's perfect
+                            for a quick dinner.
+                        </p>
+
+                        <h4>Ingredients</h4>
+
+                        <ul>
+                            <li>Pasta</li>
+                            <li>Milk</li>
+                            <li>Cheese</li>
+                            <li>Garlic</li>
+                        </ul>
+
+                        <a href="#" class="view-button">
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recipe-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1540420773420-3366772f4999"
+                        alt="Fresh salad"
+                    >
+
+                    <div class="recipe-content">
+
+                        <h3>🥗 Fresh Salad</h3>
+
+                        <p>
+                            A healthy and refreshing salad packed with
+                            vegetables.
+                        </p>
+
+                        <h4>Ingredients</h4>
+
+                        <ul>
+                            <li>Lettuce</li>
+                            <li>Tomatoes</li>
+                            <li>Cucumber</li>
+                            <li>Corn</li>
+                        </ul>
+
+                        <a href="#" class="view-button">
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="categories" class="categories">
+
+            <h2>Recipe Categories</h2>
+
+            <div class="category-list">
+                <span>🍕 Fast Food</span>
+                <span>🥗 Healthy</span>
+                <span>🍰 Desserts</span>
+                <span>🍛 Indian</span>
+                <span>🍝 Italian</span>
+                <span>🥤 Drinks</span>
+            </div>
+
+        </section>
+
+
+        <section id="add" class="add-recipe">
+
+            <h2>Add Your Own Recipe</h2>
+
+            <form>
+
+                <label for="recipe-name">
+                    Recipe Name
+                </label>
+
+                <input
+                    type="text"
+                    id="recipe-name"
+                    placeholder="Enter recipe name"
+                >
+
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select id="category">
+
+                    <option>Select category</option>
+                    <option>Indian</option>
+                    <option>Italian</option>
+                    <option>Healthy</option>
+                    <option>Dessert</option>
+                    <option>Fast Food</option>
+
+                </select>
+
+
+                <label for="ingredients">
+                    Ingredients
+                </label>
+
+                <textarea
+                    id="ingredients"
+                    rows="5"
+                    placeholder="Enter ingredients..."
+                ></textarea>
+
+
+                <label for="instructions">
+                    Instructions
+                </label>
+
+                <textarea
+                    id="instructions"
+                    rows="6"
+                    placeholder="Enter cooking instructions..."
+                ></textarea>
+
+
+                <button type="submit">
+                    Add Recipe
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Crave Recipe Finder</p>
+
+        <p>Made while learning web development ❤️</p>
+
+    </footer>
+
+</body>
+
+</html>
